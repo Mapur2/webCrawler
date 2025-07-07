@@ -8,9 +8,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "jest": "^30.0.4"
+    "jest": "^30.0.4",
+    "jsdom": "^26.1.0"
   }
 }
