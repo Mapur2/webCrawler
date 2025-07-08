@@ -7,7 +7,11 @@ function main() {
     
     console.log("Starting crawl");
     const baseUrl = process.argv[2]
-    crawlPage(baseUrl)
+    const pages = crawlPage(baseUrl,baseUrl,{})
+    pages.then(pages => {console.log(pages);    process.exit(0)}).catch(()=>{
+        console.log("something went wrong")
+    })
+
 }
 
 main()
